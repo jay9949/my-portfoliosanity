@@ -1,3 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", Arial, Helvetica, sans-serif;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.heroImg {
+    width: 50%;
+    z-index: 1;
+
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+.projects {
+    background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+    box-shadow: 0 16px 14px #04152d;
+    padding: 18px 24px;
+    margin: 0 5px;
+    max-width: 345px;
+}

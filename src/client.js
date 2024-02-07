@@ -1,6 +1,25 @@
-import { SanityClient } from "@sanity/client";
+import { createClient } from "@sanity/client";
 
-export default SanityClient({
+export const sanityClient = createClient({
   projectId: "uwiv6lbz",
   dataset: "production",
+  useCdn: false,
 });
+
+export const fetchDataFromSanity = async () => {
+  try {
+    const query = `*[_type == 'header']{
+      _id,
+      label,
+      link,
+  }`;
+
+    const data = await sanityClient.fetch(query);
+
+    return data;
+  } catch (error) {
+    throw error;
+  }
+};
+
+export default sanityClient;

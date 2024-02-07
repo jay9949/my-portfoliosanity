@@ -4,8 +4,13 @@ export default {
   type: 'document',
   fields: [
     {
+      name: 'name',
+      title: 'Name',
+      type: 'string',
+    },
+    {
       name: 'link',
-      title: 'Names',
+      title: 'Link',
       type: 'string',
     },
   ],

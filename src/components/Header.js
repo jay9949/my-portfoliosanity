@@ -3,10 +3,9 @@ import React from "react";
 import sanityClient, { fetchDataFromSanity } from "../client";
 
 const data = await fetchDataFromSanity();
-console.log("Data From Sanity", data);
-
 const querylink = `*[_type == 'headerlink']{
   _id,
+  name,
    link,
 }`;
 
@@ -25,12 +24,13 @@ const Header = () => {
             </div>
             <div className="flex gap-8">
               {datalink.map((item) => (
-                <h5
+                <a
+                  href={item.link}
                   className="text-[25px] text-white cursor-pointer hover:text-[#576cbc] duration-500"
                   key={item._id}
                 >
-                  {item.link}
-                </h5>
+                  {item.name}
+                </a>
               ))}
             </div>
           </div>

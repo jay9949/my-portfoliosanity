@@ -29,7 +29,7 @@ body::-webkit-scrollbar {
 }
 
 .hero {
-    background: linear-gradient(270deg, #fff 70%, #fff0 120%);
+    background: linear-gradient(90deg, #fff 70%, rgba(0, 0, 0, 0) 120%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }

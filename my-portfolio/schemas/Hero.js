@@ -14,6 +14,16 @@ export default {
       type: 'text',
     },
     {
+      name: 'role',
+      title: 'Role',
+      type: 'string',
+    },
+    {
+      name: 'link',
+      title: 'Link',
+      type: 'string',
+    },
+    {
       name: 'hero_image',
       title: 'Hero Image',
       type: 'image',

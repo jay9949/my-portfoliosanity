@@ -22,11 +22,16 @@ body::-webkit-scrollbar {
 .heroImg {
     width: 50%;
     z-index: 1;
-
     animation-name: floating;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+}
+
+.hero {
+    background: linear-gradient(270deg, #fff 70%, #fff0 120%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 @keyframes floating {

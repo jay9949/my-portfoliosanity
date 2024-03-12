@@ -4,6 +4,7 @@ export const sanityClient = createClient({
   projectId: "uwiv6lbz",
   dataset: "production",
   useCdn: false,
+  apiVersion: "2021-08-31",
 });
 
 export const fetchDataFromSanity = async () => {

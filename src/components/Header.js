@@ -63,13 +63,15 @@ const Header = () => {
           </div>
           <div
             className={`md:flex gap-8 ${
-              menuOpen ? "block absolute top-[4rem] right-4" : "hidden"
+              menuOpen
+                ? "block absolute top-[4rem] right-4 bg-[#133a70] px-3 py-4 rounded-lg"
+                : "hidden"
             } md:block`}
           >
             {datalink.map((item) => (
               <a
                 href={item.link}
-                className="block text-lg md:text-[25px] text-white cursor-pointer hover:text-[#576cbc] duration-500"
+                className="block text-lg md:text-[25px] text-white cursor-pointer hover:text-black duration-500"
                 key={item._id}
               >
                 {item.name}

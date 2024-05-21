@@ -23,15 +23,15 @@ const Header = () => {
               {list.label}
             </h1>
           </div>
-          <div className="md:hidden relative">
+          <div className="md:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="text-gray-700 focus:outline-none absolute top-3"
+              className="text-white focus:outline-none relative"
             >
               {menuOpen ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                  className="h-6 w-6 absolute top-[-1.3rem] left-[-1.7rem]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -46,7 +46,7 @@ const Header = () => {
               ) : (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                  className="h-6 w-6 absolute top-[-1rem] right-[0rem]"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -63,7 +63,7 @@ const Header = () => {
           </div>
           <div
             className={`md:flex gap-8 ${
-              menuOpen ? "block" : "hidden"
+              menuOpen ? "block absolute top-[4rem] right-4" : "hidden"
             } md:block`}
           >
             {datalink.map((item) => (

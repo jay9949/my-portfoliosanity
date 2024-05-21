@@ -53,7 +53,7 @@ const About = () => {
                         className="items-center"
                       />
                     </div>
-                    <h3 className="font-semibold text-2xl text-white text-center">
+                    <h3 className="font-semibold text-2xl pb-6 text-white text-center">
                       {item.role}
                     </h3>
                   </>

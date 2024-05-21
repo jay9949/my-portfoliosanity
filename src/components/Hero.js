@@ -13,7 +13,7 @@ const query = `*[_type == "hero"]{
 const datalink = await sanityClient.fetch(query);
 const Hero = () => {
   return (
-    <div className="container bg-[#04152d]">
+    <div className="container pb-8 bg-[#04152d]">
       {datalink.map((item) => (
         <div key={item._id} className="flex px-10 justify-center items-center">
           <div className="ml-8">

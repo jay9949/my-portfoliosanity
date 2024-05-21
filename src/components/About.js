@@ -30,7 +30,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="container bg-[#04152d] px-10" id="about">
+    <section className="container bg-[#04152d] px-10 pt-8" id="about">
       <h2 className="text-white text-[35px] font-bold tracking-[1.75px]">
         {aboutData?.title}
       </h2>

@@ -23,10 +23,10 @@ const Header = () => {
               {list.label}
             </h1>
           </div>
-          <div className="md:hidden">
+          <div className="md:hidden relative">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="text-gray-700 focus:outline-none"
+              className="text-gray-700 focus:outline-none absolute top-3"
             >
               {menuOpen ? (
                 <svg

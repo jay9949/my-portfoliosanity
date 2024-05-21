@@ -16,7 +16,7 @@ const datalink = await sanityClient.fetch(query);
 
 const Projects = () => {
   return (
-    <div className="container bg-[#04152d] px-10 py-14">
+    <section className="container bg-[#04152d] px-10 py-14" id="projects">
       {datalink.map((item) => (
         <>
           <h1
@@ -59,7 +59,7 @@ const Projects = () => {
           </div>
         </>
       ))}
-    </div>
+    </section>
   );
 };
 

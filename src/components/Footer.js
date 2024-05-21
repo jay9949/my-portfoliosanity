@@ -15,7 +15,10 @@ const data = await sanityClient.fetch(query);
 
 const Footer = () => {
   return (
-    <div className="text-white  bg-[#19376d] flex flex-row justify-evenly w-[100vw] px-[10%] py-14 gap-3">
+    <div
+      className="text-white  bg-[#19376d] flex flex-row justify-evenly w-[100vw] px-[10%] py-14 gap-3"
+      id="contact"
+    >
       {data.map((item) => (
         <>
           <div key={item._id}>

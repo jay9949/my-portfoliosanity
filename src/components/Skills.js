@@ -12,7 +12,7 @@ const query = `*[_type == "skills"] {
 const data = await sanityClient.fetch(query);
 const Skills = () => {
   return (
-    <div className="bg-[#04152d] container px-10 py-14">
+    <div className="bg-[#04152d] container px-10 py-14" id="experience">
       {data.map((item) => (
         <div key={item._id}>
           <h2 className="text-white text-[35px] font-bold tracking-[1.75px]">
